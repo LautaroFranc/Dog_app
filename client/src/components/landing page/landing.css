@@ -1,0 +1,230 @@
+
+.cont{
+ background : #f2f2f2;
+ height:100vh;
+ overflow:hidden;
+}
+.c-cont{
+  position: relative;
+  margin: 20px auto;
+  border-radius: 20px;
+  border:1px solid rgb(255, 255, 255);
+  width:70%;
+  height: 80%;
+  backdrop-filter: blur(3px);
+  z-index: 3;
+}
+.c-draw {
+  width: 100%;
+  height:100vh;
+  position:absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+.c-draw img{
+  display: none;
+}
+#canvas{
+  position:absolute;
+  background-color: transparent;
+}
+.c-img{
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.it-img{
+  position: absolute;
+  width: 100%;
+}
+.it-img img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.ltg {
+  position: absolute;
+  left: 50%;
+  font-size: 30em;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  line-height: 280px;
+  filter:drop-shadow(15px 2px  0px rgb(0, 0, 0));
+  z-index: 1;
+}
+
+.cont-Text{
+  border: 1 solid black;
+  display: flex;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+  flex-direction: column;
+}
+
+.cont-Text h1{
+  color: rgb(0, 0, 0);
+  font-size: 8em;
+  letter-spacing: 20px;
+  filter:drop-shadow(10px 0px  0px #949494);
+  position: relative;
+  margin-top: 100px;
+  left: 30%;
+  animation :Do 0.5s 1 cubic-bezier(0.51, 0.2, 1, 1.34) ;
+}
+
+@keyframes Do {
+  0%{
+    margin-left: -400px;
+  }
+  100%{
+    margin-left: 20px;
+  }
+}
+
+.cont-Text p{
+  font-size:2em;
+  font-family: 'Alegreya SC', serif;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 20px;
+  filter:drop-shadow(5px 0px 0px rgb(255, 255, 255));
+  animation: txt 0.4s 1 ease-in;
+}
+
+@keyframes txt {
+  0%{
+    filter:drop-shadow(9px 8px 0px rgb(0, 0, 0));
+    margin-left: -400px;
+  
+  }
+  100%{
+  margin-left: 20px;
+  
+  }
+}
+.c-button{
+  width: 5px;
+  height: 45px;
+  margin-left: 45%;
+}
+
+.c-button button {
+  position: relative;
+  border:none;
+  background-color: #f1f1f1;
+  box-shadow:3px 3px 5px #7f7f7f;
+  filter: drop-shadow(-5px -5px 3px #fff);
+  margin-top: 80px;
+  margin-left: 45%;
+  width: 103px;
+  height: 45px;
+  font-size: 1.7em;
+  font-family: 'Roboto', sans-serif;
+  outline: 0.5px solid rgba(255, 255, 255, 0.322);
+  border-radius:5px;
+  color: rgb(2, 2, 2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+.c-button button:hover{
+  box-shadow:0px 0px  0px rgba(0, 0, 0, 0.308);
+  margin-left: 46%;
+  outline: 0.5px solid rgba(63, 63, 63, 0.322);
+}
+.c-button button:active{
+  position:absolute;
+  width: 300%;
+  border: none;
+  bottom:0px;
+  top:0;
+  left:-100%;
+  margin: 0px;
+  height: 200vh;
+  font-size: 0em;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .c-img{
+    display: flex;
+    width: 100%;
+    height:100vh;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .c-cont{
+    position: relative;
+    margin: 20px auto;
+    border-radius: 20px;
+    border:1px solid rgb(255, 255, 255);
+    width:100%;
+    height: 80%;
+    backdrop-filter: blur(3px);
+    z-index: 3;
+  }
+  .it-img{
+    position: absolute;
+    width: 100%;
+  }
+  .it-img img{
+    width: 200%;
+    object-fit: contain;
+  }
+  
+
+  .cont{
+    background : #f2f2f2;
+    height:100vh;
+    overflow:hidden;
+   }
+   
+.ltg {
+  position: absolute;
+  left: 40%;
+  font-size: 20em;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  line-height: 280px;
+  filter:drop-shadow(15px 2px  0px rgb(0, 0, 0));
+  z-index: 1;
+}
+
+.cont-Text h1{
+  color: rgb(0, 0, 0);
+  font-size: 8em;
+  letter-spacing: 50px;
+  filter:drop-shadow(10px 0px  0px #949494);
+  position: relative;
+  margin-top: 100px;
+  left: 16%;
+  animation :Do 0.5s 1 cubic-bezier(0.51, 0.2, 1, 1.34) ;
+}
+.cont-Text p{
+  font-size:2em;
+  margin-top: 80px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: 1px;
+  filter:drop-shadow(5px 0px 0px rgb(255, 255, 255));
+  animation: txt 0.4s 1 ease-in;
+}
+.c-button{
+  margin-left: 35%;
+}
+
+
+}

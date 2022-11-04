@@ -1,0 +1,53 @@
+.carga-search{
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  color:#a6a6a6;
+  font-size:3rem;
+  animation :search 2s infinite alternate;
+}
+
+@keyframes search {
+ 0%{
+  top: 44%;
+ }
+  50%{
+    top: 50%;
+    transform:rotate(40deg)
+  }
+  100%{
+    top: 54%;
+
+  }
+}
+
+
+.stop{
+  display:none;
+}
+
+
+@media (max-width: 768px) { 
+  .carga-search{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color:#a6a6a6;
+    font-size:3rem;
+    animation :search 2s infinite alternate;
+  }
+  @keyframes search {
+    0%{
+     top: 50%;
+    }
+     50%{
+       top: 80%;
+       transform:rotate(40deg)
+     }
+     100%{
+       top: 80%;
+   
+     }
+   }
+
+}

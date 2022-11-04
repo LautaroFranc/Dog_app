@@ -1,0 +1,189 @@
+.btn-container{
+    display: none;
+}
+.navbar {
+    height: 58px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 6px rgb(8, 8, 8);
+}
+
+.navbar nav {
+    height: 100%;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+}
+
+.list_item a{
+    border-radius: 2px;
+    color: rgb(160, 159, 159);
+    height: 100%;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    outline: 1px solid white; 
+    padding:6px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.list_item p{
+    color: rgb(156, 155, 155);
+    margin-left: 10px;
+    position: absolute;
+}
+.list_item a:hover,
+.list_item a.active{
+    background-color: rgb(252, 249, 249);
+    outline:1px solid #000;
+}
+
+.navbar-logo a{
+    display:flex;
+    font-size: 30px;
+    color: rgb(46, 46, 46);
+    margin-left: 10px;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+.logoHenry::first-letter{
+    font-family: 'Faster One', cursive;
+    padding:4px;
+    text-decoration:underline #fff;
+    border-radius: 4px;
+    font-weight:bold;
+    background-color:#fb0000;
+    color:rgba(0, 0, 34, 0.671);
+}
+
+@media (max-width: 768px) {
+    .btn-container{
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        right: 0;
+    }
+    .btn-menu{
+        font-size: 1.7rem;
+        text-align: center;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+    }
+    .clos_btn {
+        position: relative;
+        font-size: 1.7rem;
+        background: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        z-index: 5;
+    }
+    .navbar{
+        flex-direction: row-reverse;
+        justify-content:center;
+        height: 78px;
+        min-width: 100%;
+        background-color:  rgb(255, 255, 255);
+    }
+    .list{
+        display:none;
+    }
+    .scrol,.list-reponsi {
+        height: 200vh;
+        width: 70%;
+        display: flex;
+        list-style: none;
+        position: absolute;
+        z-index:4;
+        flex-direction: column;
+        left:0px;
+        top: 0px;
+        box-shadow: 162px 0px 212px 68px rgba(0,0,0,0.75);
+        background-color: #1c1c1c;
+        animation: scrol 0.4s 1 ease-out;
+    }
+    @keyframes scrol {
+        0%{
+            left:-100px;
+        }
+        100%{
+            left:0;
+        }
+    }
+    .scrol{
+        left:-500px;
+        box-shadow: none;
+        animation: scrol2 0.4s 1 ;
+        
+    } @keyframes scrol2 {
+        0%{
+            left:0px;
+        }
+        100%{
+            left:-400px;
+            display: none;
+        }
+    }
+   .list_item-reponsi{ 
+        margin-top: 50px;
+        position: relative;
+        top: 70px;
+        left:20px;
+    }
+    .list_item-reponsi a{
+        color: #fff;
+        font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.4rem;
+        line-height: 1px;
+        text-decoration: none;
+        border-radius: 2px;
+        height: 100%; 
+        padding:6px 20px;
+        margin-left: 10px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .list_item-reponsi p{
+        color: #fff;
+        top:-2px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    .list_item-reponsi a:hover,
+    .list_item-reponsi a.active{
+        background-color: #fb0000;
+        outline: none;
+    }
+    .navbar-logo a{
+        font-size: 1.7rem;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        text-decoration: none;
+    }
+
+    
+}

@@ -1,0 +1,310 @@
+:root{
+  --color-name:#000;
+  --color-text: rgb(54, 54, 54);
+  --border-radion-img: 0px;
+}
+
+.c-CardDogs{
+  background:rgba(193, 193, 194, 0.336);
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:100vh;
+  justify-content: space-evenly;
+}
+
+.i-Formu{
+  margin-top: 10px;
+  position: absolute;
+  display:flex;
+  justify-content:center;
+  left:10px;
+}
+.i-Formu input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: 0.5px solid rgba(95, 93, 93, 0.322);
+  text-align: center;
+  font-size: 1em;
+  box-shadow:10px 5px  0px rgba(0, 0, 0, 0.623);
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: rgb(2, 2, 2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.i-Formu input:hover{
+  height: 40px;
+  font-size: 1.5em;
+  color:#000;
+}
+
+.i-button-Form{
+  width: 80px;
+  height: 40px;
+  margin-left: 15px;
+}
+.i-button-Form button{
+  border:none;
+  box-shadow:10px 5px  0px rgba(0, 0, 0, 0.623);
+  width: 80px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  outline: 0.5px solid rgba(36, 29, 29, 0.322);
+  background-color: #363636;
+  border-radius:5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+.i-button-Form button:hover{
+  background-color: #ffffffee;
+  color: #363636;
+
+}
+.i-Formu button:active{
+  box-shadow:none;
+  background-color: #ffffffe5;
+  margin-left: 2px;
+}
+
+.c-card{
+  display:flex;
+  margin:80px 10px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 95%;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border:10px solid rgba(255, 255, 255, 0.377);
+  border-bottom:20px solid rgba(255, 255, 255, 0.377);
+}
+
+.c-card:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, #0367fd2a -10%, rgb(255, 255, 255) 40% );
+  transform: translate3d(0px, 0px, 0px) scale(0.99);
+  filter: blur(10px);
+  opacity: var(0.7);
+  border-radius: inherit;
+}
+
+.c-card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
+.c-card a{
+  text-decoration: none;
+}
+.i-card{
+  color:#fff;
+  width:100px;
+  height: 300px;
+  border-radius:5px;
+  margin: 12px;
+  background-color: rgba(255, 255, 255, 0.274);
+  outline:1px solid rgba(0, 0, 0, 0.301);
+  box-shadow:3px 3px 5px #7f7f7f;
+  filter: drop-shadow(-5px -5px 3px #fff);
+  overflow: hidden;
+  transition: all 0.1s;
+}
+.i-card:hover{
+  --color-name:#fff;
+  --border-radion-img:100px;
+  --color-text:#fff;
+  width:200px;
+  height: 400px;
+  box-shadow: 2px 20px  30px rgba(56, 56, 56, 0.692);
+  margin-top: -40px ;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+.i-card:active{
+  box-shadow: none;
+  margin-left: 12px;
+}
+.i-img img{
+  outline:1px solid #e2e2e267;
+  border-radius: var(--border-radion-img);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.1s;
+}
+
+.i-info-text{
+  text-align: start;
+  height:100px;
+  color:var(--color-name);
+  margin: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.i-info-text p{
+  font-size: 0.9em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top:2px;
+  color:var(--color-text);
+}
+.i-info-text h2{
+  font-family: 'Alegreya SC', serif;
+  font-size:1em;
+}
+.info-peso{
+  color: rgb(192, 192, 192);
+  display:flex;
+  justify-content: flex-end;
+  margin:10px;
+  align-items: flex-end;
+  border-radius: 50px;
+  border-right : 5px solid rgba(68, 126, 252, 0.979);
+}
+.info-temp span{
+  font-size:1.1em;
+  color: rgb(155, 155, 155);
+}
+
+.c-button-prox{
+  position: absolute;
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 0px 50%;
+  min-width: 100px;
+  min-height: 50px;
+}
+.c-button-prox button{
+  margin: 0 40px;
+  padding: 10px;
+  width: 50px;
+  outline: 1px solid ;
+  border:none;
+  background-color: #3c3c3d;
+  outline: 1px solid #03030367;
+  box-shadow:10px 5px  0px rgba(0, 0, 0, 0.623);
+  color:#ccc;
+  font-size:1.1em;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.c-button-prox button:active{
+  margin: 0 10px;
+  box-shadow:5px 2px  0px rgba(0, 0, 0, 0.623);
+}
+.c-button-prox #bt1{
+  border-radius: 50px 0 0 50px;
+}
+.c-button-prox #bt1:active{
+  margin: 0px 55px;
+}
+.c-button-prox #bt2{
+  border-radius: 0px 50px 50px 0px;
+}
+
+.c-button-prox #bt2:active{
+  margin: 0 52px;
+}
+.Error{
+  margin:20px auto;
+}
+.Error p{
+  border-radius:3px;
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  font-size: 1.2em;
+  background-color: #3c3c3d;
+  padding:10px;
+  color: #fff;
+}
+.Error-emojin{ 
+  margin: 0 50px;
+  filter:drop-shadow(10px 5px 0px rgb(92, 92, 92));
+  text-align: center;
+  font-size:10em;
+}
+
+
+@media (max-width: 768px) {
+  .c-CardDogs{
+    margin-top: 60px;
+  }
+  
+.c-button-prox{
+  margin: 50px;
+}
+.i-button-Form{
+  display: none;
+}
+.i-Formu input{
+  width: 149%;
+
+}
+.c-card{
+  display:flex;
+  margin:80px 0px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  border-radius: 10px;
+  border:10px solid rgba(255, 255, 255, 0.377);
+  border-bottom:20px solid rgba(255, 255, 255, 0.377);
+ }
+.i-card{
+  color:#fff;
+  width:100px;
+  height: 150px;
+  border-radius:5px;
+  margin: 12px;
+  background-color: rgba(255, 255, 255, 0.274);
+  outline:1px solid rgba(0, 0, 0, 0.301);
+  box-shadow:3px 3px 5px #7f7f7f;
+  filter: drop-shadow(-5px -5px 3px #fff);
+  overflow: hidden;
+  transition: all 0.1s;
+}
+.i-card:hover{
+  --color-name:#fff;
+  --border-radion-img:100px;
+  --color-text:#fff;
+  width:100px;
+  height: 200px;
+  box-shadow: 2px 20px  30px rgba(56, 56, 56, 0.692);
+  margin-top: -40px ;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+.i-img img{
+  outline:1px solid #e2e2e267;
+  border-radius: var(--border-radion-img);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: all 0.1s;
+}
+.i-info-text h2{
+  font-family: 'Alegreya SC', serif;
+  font-size:0.8em;
+}
+}

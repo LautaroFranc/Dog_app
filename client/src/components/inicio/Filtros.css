@@ -1,0 +1,144 @@
+:root{
+  --mostras-hover:none;
+}
+.container-filtro{
+  position:absolute;
+  z-index: 1;
+  border-radius: 0 0 50px 50px;
+  left:62%;
+  margin-top:2px;
+  background-color:rgba(255, 255, 255, 0.336);
+  backdrop-filter: blur(5px);
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  width:20%;
+  max-height: 100px;
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 1px 0px rgba(38, 10, 61, 0.274);
+  outline: 1px solid rgba(148, 148, 148, 0.363);
+  overflow: hidden;
+  transition: all 0.8s;
+}
+.i-filtro,
+.i-orden{
+  display:var(--mostras-hover);
+  transition: all 0.5s;
+}
+
+.container-filtro:hover{
+  --mostras-hover:block;
+    max-height: 500px;
+}
+
+.container-filtro span{
+  margin:4px 10%;
+}
+.i-filtro label{
+  margin-left: 40px;
+}
+.container-button-filtro button,.container-button-Ordenamiento button{
+  margin:10px 2px;
+  color: #ccc;
+  font-size:0.8em;
+  outline: 1px solid #ccc;
+  padding: 5px;
+  justify-self: center;
+  border-radius: 5px;
+  margin-left: 4px;
+  background-color:#3c3c3d;
+  cursor: pointer;
+}
+.container-button-filtro button:active,
+.container-button-Ordenamiento button:active{
+  background-color:rgb(145, 145, 146);
+}
+.container-button-filtro button:hover,
+.container-button-Ordenamiento button:hover{
+  color:#ffffff
+}
+.container-Temperamento {
+  margin:20px -10px;
+}
+.container-Temperamento select{
+  border:1px solid #ccc;
+  width: 50%;
+  margin-left:10px;
+  background-color:rgb(49, 49, 49);
+  color:#ccc;
+  font-size: 1em;
+  transition: all 0.1s;  
+}
+
+@media (max-width: 768px) {
+  
+  .container-filtro{
+    position:absolute;
+    left:0%;
+    margin-top:1%;
+    background-color:rgba(255, 255, 255, 0.336);
+    backdrop-filter: blur(5px);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    max-height: 100px;
+    color: rgb(0, 0, 0);
+    box-shadow: 10px 1px 0px rgba(38, 10, 61, 0.274);
+    outline: 1px solid rgba(148, 148, 148, 0.363);
+    overflow: hidden;
+    transition: all 0.8s;
+  }
+  .i-filtro,
+  .i-orden{
+    display:var(--mostras-hover);
+    transition: all 0.5s;
+  }
+  
+  .container-filtro:hover{
+    --mostras-hover:block;
+      max-height: 500px;
+  }
+  
+  .container-filtro span{
+    margin:4px 10%;
+  }
+  .i-filtro label{
+    margin-left: 40px;
+  }
+  .container-button-filtro button,.container-button-Ordenamiento button{
+    margin:10px 2px;
+    color: #ccc;
+    font-size:0.8em;
+    outline: 1px solid #ccc;
+    padding: 5px;
+    justify-self: center;
+    border-radius: 5px;
+    margin-left: 4px;
+    background-color:#3c3c3d;
+    cursor: pointer;
+  }
+  .container-button-filtro button:active,
+  .container-button-Ordenamiento button:active{
+    background-color:rgb(145, 145, 146);
+  }
+  .container-button-filtro button:hover,
+  .container-button-Ordenamiento button:hover{
+    color:#ffffff
+  }
+  .container-Temperamento {
+    margin:20px -10px;
+  }
+  .container-Temperamento select{
+    border:1px solid #ccc;
+    width: 50%;
+    margin-left:10px;
+    background-color:rgb(49, 49, 49);
+    color:#ccc;
+    font-size: 1em;
+    transition: all 0.1s;  
+  }
+  
+}
